@@ -1,10 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
   <head>
-    <meta charset="utf-8">
-    <title>你好，GitHub</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="網站.ico" />
+    <title>水漾 繪圖委託平台</title>
+    <meta
+      name="description"
+      content="這裡是水漾的繪圖委託網站。主要繪製實況貼圖/動圖、各類插畫…等項目。"
+    />
+    <link
+      rel="preload"
+      href="./fonts/SETOFONT.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/SETOFONT.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preload" href="./Content/StyleSheet1_20240326.css" as="style" />
+    <link rel="stylesheet" href="./Content/StyleSheet1_20240326.css" />
   </head>
   <body>
-    <h1>覺得厲害</h1>
+    <template>
+      <div class="home container">
+        <div class="row gy-3 justify-content-center homeRow">
+          <div class="col-md-5" style="display: flex; align-items: center">
+            <img :src="imgUrlHead" loading="lazy" style="margin: 0px auto;" />
+          </div>
+          <div class="col-md-1 horizontalLine"></div>
+          <div
+            class="col-md-6 col-12"
+            style="display: flex; align-items: center"
+          >
+            <div class="row gy-3 justify-content-center">
+              <div class="col-12 content">
+                <h1 class="font content_f">
+                  你好！這裡是水漾的繪圖委託網站<br />
+                  部分委託都會在直播中作業，若不公開請事先告知！<br />
+                  委託前請幫我看過注意事項<br />
+                  並使用DC或者Twitter聯繫，感謝你的配合(*´∀`)♥
+                </h1>
+              </div>
+              <div class="col-12">
+                <div class="row gy-3">
+                  <div class="col-md-3 col-3 content_div content_divs">
+                    <button
+                      class="font content_b1"
+                      onclick="window.open('https://www.twitch.tv/shuiyangyang');"
+                    >
+                      Twitch
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-3 content_div content_divs">
+                    <button
+                      class="font content_b2"
+                      onclick="window.open('https://discord.gg/y2SKXAbpaQ');"
+                    >
+                      Discord
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-4 content_divs">
+                    <button
+                      class="font content_b3"
+                      onclick="window.open('https://x.com/shuiyang_0730?t=GvpbfiU-qKy1cjtxhGLH3g&s=06');"
+                    >
+                      Twitter
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center noticeC" id="Notice">
+          <div class="col-md-10 col-12" style="position: relative">
+            <span class="font" style="font-size: 28px; background-color: white"
+              >委託流程：</span
+            >
+            <br />
+            <br />
+            <span class="font content_f"
+              >接收訂單 ➩ 討論內容 ➩ 支付50%訂金 ➩ 排單期支付尾款&確認草稿 ➩
+              完稿交件
+              <br />
+              <br />
+              支付方式：<br />
+              銀行轉帳 / Paypal(需負擔手續費5%)
+            </span>
+            <br />
+            <br />
+            <span class="font content_f"
+              >1.草稿可修改三次，每超過一次+100.NTD<br />
+              2.上色後可修改一次，不可大改<br />
+              3.完稿不給予遺漏設定的更改，請在草稿階段時提出<br />
+              4.加急計算：10天內交稿 委託價錢x2、三天內交稿 委託價錢x3<br />
+              &nbsp;&nbsp;視複雜度及排單狀況，也可能更高
+            </span>
+          </div>
+        </div>
+        <div class="row justify-content-center noticeC">
+          <div class="col-md-10 col-12" style="position: relative">
+            <div
+              style="
+                border: 2px solid rgb(232, 214, 212);
+                margin-top: 10px;
+                margin-bottom: 10px;
+              "
+            ></div>
+            <span class="font" style="font-size: 28px; background-color: white"
+              >注意事項：</span
+            >
+            <br />
+            <br />
+            <span class="font content_f"
+              >1. 支付訂金(全額50%)後才會加入排單，
+              <span class="span1">
+                尾款需在排單日前付清(會另行通知)
+                <br />
+              </span>
+              <span class="span2">
+                &nbsp;&nbsp;&nbsp;尾款需在排單日前付清(會另行通知)
+              </span>
+              &nbsp;&nbsp;&nbsp;◇委託金額800內， 需一次全額付清才排單<br />
+              2. 不擅長繪製：老年人、機械、正比胖胖人、正比男生（正太可以）<br />
+              3. 圖奇、模板委託都會當成範例公開展示<br />
+              4. 會依人設複雜度視情況加價，100.NTD 起<br />
+              5. 純文字人設會酌收通靈費用 400.NTD 起<br />
+              6. 委託皆會在實況中作業，若有活動檔期不能提早公開請事先告知<br />
+              7.
+              圖片使用權限可參照下方表格，有需求請自主提出並配合使用，若不確定也可以直接私訊詢問<br />
+              8. 加入排單後五天內可更改委託內容，超過時間皆不受理<br />
+              9. 檔案會保留兩個月後刪除，只留png/gif檔<br />
+              10. 委託展示皆會調整透明度、上浮水印、蓋簽名<br />
+              11. 以上感謝你的注意(ゝ∀･)
+            </span>
+            <div class="notice_div">
+              <img src="/Img/委託規範圖_202402.png" width="100%" />
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center noticeC">
+          <div class="col-md-10 col-12">
+            <div
+              style="
+                border: 2px solid rgb(232, 214, 212);
+                margin-top: 10px;
+                margin-bottom: 10px;
+              "
+            ></div>
+            <span class="font" style="font-size: 28px; background-color: white"
+              >延後單說明：</span
+            >
+            <br />
+            <br />
+            <span class="font content_f">
+              1.若需要延後，可先延至同個月月底，超過則照目前排單表順序後延<br />
+              2.一旦延後過單，後續若要取消委託不會退還訂金<br />
+              3.二次延後會直接取消此次委託
+            </span>
+          </div>
+        </div>
+      </div>
+    </template>
   </body>
 </html>
