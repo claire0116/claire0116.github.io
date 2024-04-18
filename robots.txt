@@ -1,0 +1,15 @@
+# robots.txt for https://shuiyang.tw/
+
+User-agent: *
+Disallow: /App_Data/
+Disallow: /fonts/
+Disallow: /Scripts/
+Disallow: /Properties/
+Disallow: /obj/
+Disallow: /bin/
+Disallow: /Content/
+Disallow: /App_Start/
+Disallow: *.png$
+Disallow: *.jpg$
+
+Sitemap: https://shuiyang.tw/Sitemap.xml
