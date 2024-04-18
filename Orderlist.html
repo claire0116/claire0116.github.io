@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="網站.ico" />
+    <title>水漾 繪圖委託平台</title>
+    <meta
+      name="description"
+      content="這裡是水漾的繪圖委託網站。主要繪製實況貼圖/動圖、各類插畫…等項目。"
+    />
+    <link
+      rel="preload"
+      href="./fonts/SETOFONT.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/SETOFONT.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preload" href="./Content/StyleSheet1_20240326.css" as="style" />
+    <link rel="stylesheet" href="./Content/StyleSheet1_20240326.css" />
+    <link rel="stylesheet" href="./Content/css/bootstrap.css" />
+    <script src="./Content/js/bootstrap.js"></script>
+    <script src="./Content/js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar fixed-top navbar-expand-lg head_color"
+      style="flex-wrap: wrap"
+    >
+      <div
+        class="container-fluid"
+        style="display: flex; justify-content: center"
+      >
+        <div
+          style="width: 100%; display: inline-flex; justify-content: center"
+          class="head_div"
+        >
+          <a to="/" class="navbar-brand" runat="server" style="margin:auto;">
+            <img
+              src="Img/LOGO-有框_縮_n.webp"
+              loading="lazy"
+              style="width:auto;height:112px;"
+              class="head_img"
+            />
+          </a>
+        </div>
+        <button
+          id="navButton"
+          class="navbar-toggler"
+          style="position: absolute; left: 5%"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 ul"
+            id="ul"
+            style="margin: 0px auto"
+          >
+            <li style="padding-top: 10px" class="nav-item">
+              <a id="index" class="font font_color head_txt" href="/">首頁</a>
+            </li>
+            <li style="padding-top: 10px" class="nav-item">
+              <a id="notice" class="font font_color head_txt" href="#noticeD"
+                >注意事項</a
+              >
+            </li>
+            <li style="padding-top: 10px" class="nav-item">
+              <a id="entrust" class="font font_color head_txt" href="Entrust"
+                >委託項目</a
+              >
+            </li>
+            <li style="padding-top: 10px" class="nav-item">
+              <a
+                id="orderlist"
+                class="font font_color head_txt index"
+                href="Orderlist"
+                >排單表</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bodyD container">
+      <div class="orderlist container" style="margin-top: 150px">
+        <iframe
+          width="100%"
+          height="500px"
+          scrolling="no"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vShHQQh6V-uST2BiEyMniP2t369tpJ6YALqSFlEncMnc5eeNzUPaplepTKvA1wgNn5hqLDtoc6Bohvx/pubhtml?gid=1347965645&amp;single=true&amp;widget=true&amp;headers=false"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  $(function () {
+      //選單變摺疊
+      if ($(window).width() <= 995) {
+        const navLinks = document.querySelectorAll('.nav-item');
+        navLinks.forEach((l) => {
+          l.addEventListener('click', () => {
+            $('#navButton').addClass("collapsed");
+            $('#navbarSupportedContent').removeClass("show");
+          })
+        })
+      }
+    })
+</script>
