@@ -69,7 +69,7 @@
           style="width: 100%; display: inline-flex; justify-content: center"
           class="head_div"
         >
-          <a to="/" class="navbar-brand" runat="server" style="margin:auto;">
+          <a href="/" class="navbar-brand" runat="server" style="margin:auto;">
             <img
               src="Img/LOGO-有框_縮_n.webp"
               loading="lazy"
@@ -207,118 +207,19 @@
               >(可點擊放大觀看)</span
             >
           </div>
-          <div class="row gy-3" style="margin-top: 10px;" v-loading="true">
+          <div class="row gy-3" style="margin-top: 10px;">
             <span class="font" style="color: rgb(121, 91, 93)">◇表情符號</span>
             <div
               id="carouselExampleControls3"
               class="carousel slide"
               data-bs-interval="false"
+              style="display: flex;justify-content: center;"
             >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="Img/表符/雨晞2.jpg"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  /><img
-                    src="Img/表符/寢姬醬.jpg"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  /><img
-                    src="Img/表符/77.jpg"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  /><img
-                    src="Img/表符/小吉2.jpg"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="Img/表符/阿妃2.jpg"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  /><img
-                    src="Img/表符/奈奈.jpg"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  /><img
-                    src="Img/表符/熊七.jpg"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  /><img
-                    src="Img/表符/帕帕.jpg"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="Img/表符/夜痕.webp"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  /><img
-                    src="Img/表符/茆糰糰.jpg"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  /><img
-                    src="Img/表符/幻雨.webp"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  /><img
-                    src="Img/表符/學姊.jpg"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="Img/表符/Fan凡.webp"
-                    width="25%"
-                    style="cursor: pointer;padding-right: 10px;"
-                    onclick="OnShow(this)"
-                  />
-                </div>
-              </div>
-              <button
-                style="position: absolute;left: -95px;"
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControls3"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                style="position: absolute;right: -25px;width: auto;"
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControls3"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div
+                class="carousel-inner"
+                id="emoHtml"
+                style="position: unset;"
+              ></div>
             </div>
             <div class="row gy-3" style="margin-top: 10px;">
               <span class="font" style="color: rgb(121, 91, 93)"
@@ -328,53 +229,13 @@
                 id="carouselExampleControls4"
                 class="carousel slide"
                 data-bs-interval="false"
+                style="display: flex;justify-content: center;"
               >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="Img/表符/茶太.jpg"
-                      width="25%"
-                      style="cursor: pointer;padding-right: 10px;"
-                      onclick="OnShow(this)"
-                    /><img
-                      src="Img/表符/勳章.webp"
-                      width="25%"
-                      style="cursor: pointer;padding-right: 10px;"
-                      onclick="OnShow(this)"
-                    /><img
-                      src="Img/表符/鈴鐺111.jpg"
-                      width="25%"
-                      style="cursor: pointer;padding-right: 10px;"
-                      onclick="OnShow(this)"
-                    />
-                  </div>
-                </div>
-                <button
-                  style="position: absolute;left: -95px;"
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleControls4"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  style="position: absolute;right: -25px;width: auto;"
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleControls4"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                <div
+                  class="carousel-inner"
+                  style="position: unset;"
+                  id="emoHtmlT"
+                ></div>
               </div>
             </div>
           </div>
@@ -888,52 +749,378 @@
   $(function () {
       //選單變摺疊
       if ($(window).width() <= 995) {
-        const navLinks = document.querySelectorAll('.nav-item');
-        navLinks.forEach((l) => {
-          l.addEventListener('click', () => {
-            $('#navButton').addClass("collapsed");
-            $('#navbarSupportedContent').removeClass("show");
+          const navLinks = document.querySelectorAll('.nav-item');
+          navLinks.forEach((l) => {
+            l.addEventListener('click', () => {
+              $('#navButton').addClass("collapsed");
+              $('#navbarSupportedContent').removeClass("show");
+            })
           })
+      }
+
+      div=document.getElementById('emoHtml');
+      divT=document.getElementById('emoHtmlT');
+
+      //電腦
+      if ($(window).width() > 769) {
+          div.innerHTML=`<div class="carousel-item active">
+                  <img
+                    src="Img/表符/雨晞2.jpg"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /><img
+                    src="Img/表符/寢姬醬.jpg"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /><img
+                    src="Img/表符/77.jpg"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /><img
+                    src="Img/表符/小吉2.jpg"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Img/表符/阿妃2.jpg"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /><img
+                    src="Img/表符/奈奈.jpg"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /><img
+                    src="Img/表符/熊七.jpg"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /><img
+                    src="Img/表符/帕帕.jpg"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Img/表符/夜痕.webp"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /><img
+                    src="Img/表符/茆糰糰.jpg"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /><img
+                    src="Img/表符/幻雨.webp"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /><img
+                    src="Img/表符/學姊.jpg"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Img/表符/Fan凡.webp"
+                    width="25%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  />
+                </div>
+                <button
+                style="position: absolute;left: -115px;"
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                style="position: absolute;right: -25px;width: auto;"
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>`;
+
+              divT.innerHTML=`<div class="carousel-item active">
+                    <img
+                      src="Img/表符/茶太.jpg"
+                      width="25%"
+                      style="cursor: pointer;padding-right: 10px;"
+                      onclick="OnShow(this)"
+                    /><img
+                      src="Img/表符/勳章.webp"
+                      width="25%"
+                      style="cursor: pointer;padding-right: 10px;"
+                      onclick="OnShow(this)"
+                    /><img
+                      src="Img/表符/鈴鐺111.jpg"
+                      width="25%"
+                      style="cursor: pointer;padding-right: 10px;"
+                      onclick="OnShow(this)"
+                    />
+                  </div>
+                  <button
+                  style="position: absolute;left: -95px;"
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleControls4"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  style="position: absolute;right: -25px;width: auto;"
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleControls4"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>`;
+      }else{
+        div.style.width="70%";
+        divT.style.width="70%";
+
+        div.innerHTML=`<div class="carousel-item active">
+                  <img
+                    src="Img/表符/雨晞2.jpg"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /></div>
+                  <div class="carousel-item">
+                  <img
+                    src="Img/表符/寢姬醬.jpg"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /></div>
+                  <div class="carousel-item">
+                  <img
+                    src="Img/表符/77.jpg"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /></div>
+                  <div class="carousel-item">
+                  <img
+                    src="Img/表符/小吉2.jpg"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /></div>
+                <div class="carousel-item">
+                  <img
+                    src="Img/表符/阿妃2.jpg"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /></div>
+                    <div class="carousel-item">
+                    <img
+                    src="Img/表符/奈奈.jpg"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /></div>
+                    <div class="carousel-item">
+                    <img
+                    src="Img/表符/熊七.jpg"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /></div>
+                    <div class="carousel-item">
+                    <img
+                    src="Img/表符/帕帕.jpg"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /></div>
+                <div class="carousel-item">
+                  <img
+                    src="Img/表符/夜痕.webp"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /></div>
+                  <div class="carousel-item">
+                  <img
+                    src="Img/表符/茆糰糰.jpg"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /></div>
+                  <div class="carousel-item">
+                  <img
+                    src="Img/表符/幻雨.webp"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /></div>
+                  <div class="carousel-item">
+                  <img
+                    src="Img/表符/學姊.jpg"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  /></div>
+                <div class="carousel-item">
+                  <img
+                    src="Img/表符/Fan凡.webp"
+                    width="100%"
+                    style="cursor: pointer;padding-right: 10px;"
+                    onclick="OnShow(this)"
+                  />
+                </div>
+                <button
+                style="position: absolute;"
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                style="position: absolute;width: auto;right: 30px;"
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>`;
+
+              divT.innerHTML=`<div class="carousel-item active">
+                    <img
+                      src="Img/表符/茶太.jpg"
+                      width="100%"
+                      style="cursor: pointer;padding-right: 10px;"
+                      onclick="OnShow(this)"
+                    /></div>
+                    <div class="carousel-item">
+                    <img
+                      src="Img/表符/勳章.webp"
+                      width="100%"
+                      style="cursor: pointer;padding-right: 10px;"
+                      onclick="OnShow(this)"
+                    /></div>
+                    <div class="carousel-item">
+                    <img
+                      src="Img/表符/鈴鐺111.jpg"
+                      width="100%"
+                      style="cursor: pointer;padding-right: 10px;"
+                      onclick="OnShow(this)"
+                    />
+                  </div>
+                  <button
+                  style="position: absolute;"
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleControls4"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  style="position: absolute;right: 30px;width: auto;"
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleControls4"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>`;
+      }
+  })
+
+      function Item(id){
+        $("#item").find("*").removeClass("indexE");
+        $(`#${id}`).addClass("indexE");
+
+        $("#emoDiv").hide();
+        $("#gifDiv").hide();
+        $("#qtypeDiv").hide();
+        $("#proportionalDiv").hide();
+        $("#fuzzyDiv").hide();
+        $("#customGifDiv").hide();
+
+        if (id == "li3") {
+          $("#emoDiv").show();
+        } else if (id == "li4") {
+          $("#gifDiv").show();
+        } else if (id == "li5") {
+          $("#qtypeDiv").show();
+        } else if (id == "li6") {
+          $("#proportionalDiv").show();
+        } else if (id == "li7") {
+          $("#customGifDiv").show();
+        } else {
+          // $("#fuzzyDiv").show();
+        }
+      }
+
+      function OnShow(e) {
+        if (e.nodeName != "IMG") {
+          return;
+        }
+
+        $("#showImg").attr("src", e.src);
+
+        var myModal = new bootstrap.Modal(document.getElementById('showImgDiv'), {
+            keyboard: false
         })
+        myModal.show();
       }
-    })
-
-    function Item(id){
-      $("#item").find("*").removeClass("indexE");
-      $(`#${id}`).addClass("indexE");
-
-      $("#emoDiv").hide();
-      $("#gifDiv").hide();
-      $("#qtypeDiv").hide();
-      $("#proportionalDiv").hide();
-      $("#fuzzyDiv").hide();
-      $("#customGifDiv").hide();
-
-      if (id == "li3") {
-        $("#emoDiv").show();
-      } else if (id == "li4") {
-        $("#gifDiv").show();
-      } else if (id == "li5") {
-        $("#qtypeDiv").show();
-      } else if (id == "li6") {
-        $("#proportionalDiv").show();
-      } else if (id == "li7") {
-        $("#customGifDiv").show();
-      } else {
-        // $("#fuzzyDiv").show();
-      }
-    }
-
-    function OnShow(e) {
-      if (e.nodeName != "IMG") {
-        return;
-      }
-
-      $("#showImg").attr("src", e.src);
-
-      var myModal = new bootstrap.Modal(document.getElementById('showImgDiv'), {
-          keyboard: false
-      })
-      myModal.show();
-    }
 </script>
