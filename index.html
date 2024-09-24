@@ -43,11 +43,11 @@
           style="width: 100%; display: inline-flex; justify-content: center"
           class="head_div"
         >
-          <a href="/" class="navbar-brand" runat="server" style="margin:auto;">
+          <a href="/" class="navbar-brand" runat="server" style="margin: auto">
             <img
               src="Img/LOGO-有框_縮_n.webp"
               loading="lazy"
-              style="width:auto;height:112px;"
+              style="width: auto; height: 112px"
               class="head_img"
             />
           </a>
@@ -102,9 +102,10 @@
       <div class="row gy-3 justify-content-center homeRow">
         <div class="col-md-5" style="display: flex; align-items: center">
           <img
-            src="Img/網站大頭_n.webp"
+            src="Img/網站大頭.png"
             loading="lazy"
-            style="margin: 0px auto;"
+            style="margin: 0px auto"
+            width="80%"
           />
         </div>
         <div class="col-md-1 horizontalLine"></div>
@@ -114,12 +115,14 @@
               <h1 class="font content_f">
                 你好！這裡是水漾的繪圖委託網站<br />
                 部分委託都會在直播中作業，若不公開請事先告知！<br />
-                委託前請幫我看過注意事項<br />
-                並使用DC或者Twitter聯繫，感謝你的配合(*´∀`)♥<br />
+                委託前請幫我看過注意事項並使用DC或Twitter聯繫<br />
+                ◆ DC請不要直接傳送好友邀請，通常都會忽略 ◆<br />
+                ◇ 請先傳送訊息告知有委託需求 ◇<br />
+                以上感謝你的配合(*´∀`)♥<br />
                 DC：shui_yang__
               </h1>
             </div>
-            <div class="col-12" style="display: flex;">
+            <div class="col-12" style="display: flex">
               <div
                 class="content_b1"
                 onclick="window.open('https://www.twitch.tv/shuiyangyang');"
@@ -166,10 +169,10 @@
         <div class="col-md-10 col-12" style="position: relative">
           <div
             style="
-                border: 2px solid rgb(232, 214, 212);
-                margin-top: 10px;
-                margin-bottom: 10px;
-              "
+              border: 2px solid rgb(232, 214, 212);
+              margin-top: 10px;
+              margin-bottom: 10px;
+            "
           ></div>
           <span
             class="font"
@@ -182,13 +185,14 @@
           <span class="font content_f"
             >1. 支付訂金(全額50%)後才會加入排單，
             <span class="span1">
-              尾款需在排單日前付清(會另行通知)
+              尾款需在正式開始繪製前付清(會通知)
               <br />
             </span>
             <span class="span2">
-              &nbsp;&nbsp;&nbsp;尾款需在排單日前付清(會另行通知)
+              &nbsp;&nbsp;&nbsp;尾款需在正式開始繪製前付清(會通知)
             </span>
-            &nbsp;&nbsp;&nbsp;◇委託金額800內， 需一次全額付清才排單<br />
+            &nbsp;&nbsp;&nbsp;◇委託金額未達800（含） 需一次全額付清後才排單
+            <br />
             2. 不擅長繪製：老年人、機械、正比胖胖人、正比男生（正太可以）<br />
             3. 圖奇、模板委託都會當成範例公開展示<br />
             4. 會依人設複雜度視情況加價，100.NTD 起<br />
@@ -210,10 +214,10 @@
         <div class="col-md-10 col-12">
           <div
             style="
-                border: 2px solid rgb(232, 214, 212);
-                margin-top: 10px;
-                margin-bottom: 10px;
-              "
+              border: 2px solid rgb(232, 214, 212);
+              margin-top: 10px;
+              margin-bottom: 10px;
+            "
           ></div>
           <span class="font" style="font-size: 28px; background-color: white"
             >延後單說明：</span
@@ -232,15 +236,15 @@
 </html>
 <script>
   $(function () {
-      //選單變摺疊
-      if ($(window).width() <= 995) {
-        const navLinks = document.querySelectorAll('.nav-item');
-        navLinks.forEach((l) => {
-          l.addEventListener('click', () => {
-            $('#navButton').addClass("collapsed");
-            $('#navbarSupportedContent').removeClass("show");
-          })
-        })
-      }
-    })
+    //選單變摺疊
+    if ($(window).width() <= 995) {
+      const navLinks = document.querySelectorAll(".nav-item");
+      navLinks.forEach((l) => {
+        l.addEventListener("click", () => {
+          $("#navButton").addClass("collapsed");
+          $("#navbarSupportedContent").removeClass("show");
+        });
+      });
+    }
+  });
 </script>
