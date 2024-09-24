@@ -24,8 +24,8 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="preload" href="./Content/StyleSheet1_20240326.css" as="style" />
-    <link rel="stylesheet" href="./Content/StyleSheet1_20240326.css" />
+    <link rel="preload" href="./Content/StyleSheet1_20240924.css" as="style" />
+    <link rel="stylesheet" href="./Content/StyleSheet1_20240924.css" />
     <link rel="stylesheet" href="./Content/css/bootstrap.css" />
     <script src="./Content/js/bootstrap.js"></script>
     <script src="./Content/js/jquery-3.7.1.min.js"></script>
@@ -43,11 +43,11 @@
           style="width: 100%; display: inline-flex; justify-content: center"
           class="head_div"
         >
-          <a href="/" class="navbar-brand" runat="server" style="margin:auto;">
+          <a href="/" class="navbar-brand" runat="server" style="margin: auto">
             <img
               src="Img/LOGO-有框_縮_n.webp"
               loading="lazy"
-              style="width:auto;height:112px;"
+              style="width: auto; height: 112px"
               class="head_img"
             />
           </a>
@@ -75,7 +75,7 @@
               <a id="index" class="font font_color head_txt" href="/">首頁</a>
             </li>
             <li style="padding-top: 10px" class="nav-item">
-              <a id="notice" class="font font_color head_txt" href="/#noticeD"
+              <a id="notice" class="font font_color head_txt" href="#noticeD"
                 >注意事項</a
               >
             </li>
@@ -110,15 +110,15 @@
 </html>
 <script>
   $(function () {
-      //選單變摺疊
-      if ($(window).width() <= 995) {
-        const navLinks = document.querySelectorAll('.nav-item');
-        navLinks.forEach((l) => {
-          l.addEventListener('click', () => {
-            $('#navButton').addClass("collapsed");
-            $('#navbarSupportedContent').removeClass("show");
-          })
-        })
-      }
-    })
+    //選單變摺疊
+    if ($(window).width() <= 995) {
+      const navLinks = document.querySelectorAll(".nav-item");
+      navLinks.forEach((l) => {
+        l.addEventListener("click", () => {
+          $("#navButton").addClass("collapsed");
+          $("#navbarSupportedContent").removeClass("show");
+        });
+      });
+    }
+  });
 </script>
