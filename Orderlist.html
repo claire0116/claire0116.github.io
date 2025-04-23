@@ -109,6 +109,9 @@
   </body>
 </html>
 <script>
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
   $(function () {
     //選單變摺疊
     if ($(window).width() <= 995) {
