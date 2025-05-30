@@ -24,8 +24,8 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="preload" href="./Content/StyleSheet1_20251215.css" as="style" />
-    <link rel="stylesheet" href="./Content/StyleSheet1_20251215.css" />
+    <link rel="preload" href="./Content/StyleSheet1_20250530.css" as="style" />
+    <link rel="stylesheet" href="./Content/StyleSheet1_20250530.css" />
     <link rel="stylesheet" href="./Content/css/bootstrap.css" />
     <script src="./Content/js/bootstrap.js"></script>
     <script src="./Content/js/jquery-3.7.1.min.js"></script>
@@ -154,6 +154,11 @@
                 >客製GIF</a
               >
             </li>
+            <li>
+              <a onclick="Item('li8')" id="li8" class="font font_color"
+                >人設立繪</a
+              >
+            </li>
           </ul>
           <div
             style="
@@ -195,7 +200,7 @@
           >
             <div class="col-md-5 col-11" style="text-align: center">
               <span class="font content_f"
-                >◆此為商用價格<br />
+                >◆價格已為商用，可在各平台做貼圖使用<br />
                 ◇上架LINE貼圖NTD.600/張<br />
                 若原先委託了一般表符，後續可直接補差價去做販售<br />
                 ◆有加物件或人設複雜會視情況加價 單件NTD.100起<br />
@@ -249,6 +254,27 @@
               style="display: flex; justify-content: center"
             >
               <div class="row gy-5">
+                <div class="col-md-3 col-12">
+                  <img
+                    src="Img/表符/小K.jpg"
+                    style="cursor: pointer; padding-right: 10px; width: 100%"
+                    onclick="OnShow(this)"
+                  />
+                </div>
+                <div class="col-md-3 col-12">
+                  <img
+                    src="Img/表符/信卡2.jpg"
+                    style="cursor: pointer; padding-right: 10px; width: 100%"
+                    onclick="OnShow(this)"
+                  />
+                </div>
+                <div class="col-md-3 col-12">
+                  <img
+                    src="Img/表符/新熊七.jpg"
+                    style="cursor: pointer; padding-right: 10px; width: 100%"
+                    onclick="OnShow(this)"
+                  />
+                </div>
                 <div class="col-md-3 col-12">
                   <img
                     src="Img/表符/1hxnz.jpg"
@@ -494,7 +520,7 @@
               "
             >
               <span class="font content_f"
-                >◆此為商用價格<br />
+                >◆價格已為商用，可在各平台做貼圖使用<br />
                 ◇有加物件或人設複雜會視情況加價 單件NTD.100起<br />
                 ◆無人設圖會加收通靈費用NTD.400起<br />
                 ◇此區委託會當範例公開展示
@@ -502,26 +528,25 @@
             </div>
           </div>
           <!-- 作品 -->
-          <div class="row gy-5" style="margin-top: 65px">
+          <div
+            class="font"
+            style="
+              font-size: 25px;
+              color: rgb(121, 91, 93);
+              margin-top: 20px;
+              text-align: center;
+            "
+          >
+            <span style="background-color: white">作品展示</span>
+          </div>
+          <div style="color: rgb(121, 91, 93); text-align: center">
+            <span class="font" style="font-size: 15px">(可點擊放大觀看)</span>
+          </div>
+          <div class="row gy-5" style="margin-top: 10px">
             <div
               class="col-md-4 col-12"
               style="display: flex; justify-content: center; position: relative"
             >
-              <span
-                class="font"
-                style="
-                  position: absolute;
-                  top: -55px;
-                  left: 10%;
-                  font-size: 25px;
-                  color: rgb(121, 91, 93);
-                "
-              >
-                <span style="background-color: white">作品展示</span>
-                <span class="font" style="font-size: 15px; margin-left: -14px"
-                  >(可點擊放大觀看)</span
-                >
-              </span>
               <div style="text-align: center">
                 <span class="font content_f">
                   ◇蹭蹭(新) NTD.2200 動物元素+300
@@ -696,7 +721,7 @@
               style="display: flex; justify-content: center"
             >
               <div style="text-align: center">
-                <span class="font content_f"> ◇探頭 NTD.800 耳朵動態+300 </span>
+                <span class="font content_f"> ◇探頭 NTD.800 耳朵動態+200 </span>
                 <img
                   src="Img/探頭/探頭2.gif"
                   style="width: 80%; cursor: pointer"
@@ -742,6 +767,13 @@
                 >
                   ◇頭貼/半身◇
                 </span>
+                <div class="col-6">
+                  <img
+                    src="Img/Q版/Q版頭貼_花栗鼠.jpg"
+                    style="width: 100%; cursor: pointer"
+                    onclick="OnShow(this)"
+                  />
+                </div>
                 <div class="col-6">
                   <img
                     src="Img/Q版/HAKUMEI_工作區域 1.jpg"
@@ -935,6 +967,20 @@
                 >
                 <div class="col-6">
                   <img
+                    src="Img/一般正比/精緻半身_揚欸.jpg"
+                    style="width: 100%; cursor: pointer"
+                    onclick="OnShow(this)"
+                  />
+                </div>
+                <div class="col-6">
+                  <img
+                    src="Img/一般正比/精緻半身_小K.jpg"
+                    style="width: 100%; cursor: pointer"
+                    onclick="OnShow(this)"
+                  />
+                </div>
+                <div class="col-6">
+                  <img
                     src="Img/一般正比/精緻_合唱.jpg"
                     style="width: 100%; cursor: pointer"
                     onclick="OnShow(this)"
@@ -993,7 +1039,7 @@
               "
             >
               <span class="font content_f"
-                >◆此為商用價格<br />
+                >◆價格已為商用，可在各平台做貼圖使用<br />
                 ◇會依照不同需求進行估價<br />
                 ◆有加物件或人設複雜會視情況加價 單件NTD.100起<br />
                 ◇無人設圖會加收通靈費用NTD.400起
@@ -1006,16 +1052,26 @@
               font-size: 25px;
               color: rgb(121, 91, 93);
               margin-top: 20px;
-              margin-bottom: 15px;
+              text-align: center;
             "
           >
             <span style="background-color: white">作品展示</span>
-            <span class="font" style="font-size: 15px; margin-left: -14px"
-              >(可點擊放大觀看)</span
-            >
+          </div>
+          <div style="color: rgb(121, 91, 93); text-align: center">
+            <span class="font" style="font-size: 15px">(可點擊放大觀看)</span>
           </div>
           <!-- 作品 -->
-          <div class="row gy-5">
+          <div class="row gy-5" style="margin-top: 10px">
+            <div
+              class="col-md-4 col-12"
+              style="display: flex; justify-content: center"
+            >
+              <img
+                src="Img/客制gif/客製動圖_霄.gif"
+                style="width: 80%; cursor: pointer"
+                onclick="OnShow(this)"
+              />
+            </div>
             <div
               class="col-md-4 col-12"
               style="display: flex; justify-content: center"
@@ -1043,6 +1099,58 @@
               <img
                 src="Img/客制gif/咪醬.gif"
                 style="width: 80%; cursor: pointer"
+                onclick="OnShow(this)"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 人設立繪 -->
+        <div id="characterDiv" style="display: none">
+          <div class="row">
+            <!-- 說明 -->
+            <div
+              class="col-md-12 col-12"
+              style="
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+              "
+            >
+              <span class="font content_f"
+                >NTD.3000<br /><br />
+                ◆價格已含商用<br />
+                ◇構圖統一為全身，僅上單層光影完成度請參考展示圖<br />
+                ◆人設過於複雜會視情況加價 單件NTD.100起<br />
+                ◇純文字設定會加收通靈費用NTD.300起<br />
+                ◆此區委託會當範例公開展示
+              </span>
+            </div>
+          </div>
+          <!-- 作品 -->
+          <div
+            class="font"
+            style="
+              font-size: 25px;
+              color: rgb(121, 91, 93);
+              margin-top: 20px;
+              text-align: center;
+            "
+          >
+            <span style="background-color: white">作品展示</span>
+          </div>
+          <div style="color: rgb(121, 91, 93); text-align: center">
+            <span class="font" style="font-size: 15px">(可點擊放大觀看)</span>
+          </div>
+          <!-- 作品 -->
+          <div class="row gy-5" style="margin-top: 10px">
+            <div
+              class="col-md-12 col-12"
+              style="display: flex; justify-content: center"
+            >
+              <img
+                src="Img/人設/人設立繪_咩寶.jpg"
+                style="width: 60%; cursor: pointer"
                 onclick="OnShow(this)"
               />
             </div>
@@ -1108,6 +1216,7 @@
   document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
   });
+
   $(function () {
     //選單變摺疊
     if ($(window).width() <= 995) {
@@ -1570,6 +1679,7 @@
     $("#proportionalDiv").hide();
     $("#fuzzyDiv").hide();
     $("#customGifDiv").hide();
+    $("#characterDiv").hide();
 
     if (id == "li3") {
       $("#emoDiv").show();
@@ -1581,6 +1691,8 @@
       $("#proportionalDiv").show();
     } else if (id == "li7") {
       $("#customGifDiv").show();
+    } else if (id == "li8") {
+      $("#characterDiv").show();
     } else {
       // $("#fuzzyDiv").show();
     }
