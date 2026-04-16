@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="">
   <head>
     <meta charset="utf-8" />
@@ -102,10 +102,11 @@
       <div class="row gy-3 justify-content-center homeRow">
         <div class="col-md-5" style="display: flex; align-items: center">
           <img
-            src="Img/網站大頭.png"
+            src="Img/chibi-character-commission.png"
             loading="lazy"
             style="margin: 0px auto"
             width="80%"
+            alt="Q版人物繪圖委託"
           />
         </div>
         <div class="col-md-1 horizontalLine"></div>
@@ -125,15 +126,19 @@
             <div class="col-12" style="display: flex">
               <div
                 class="content_b1"
-                onclick="window.open('https://www.twitch.tv/shuiyang_');"
+                onclick="window.open('https://www.twitch.tv/shuiyang_')"
               ></div>
               <div
                 class="content_b2"
-                onclick="window.open('https://discord.gg/y2SKXAbpaQ');"
+                onclick="window.open('https://discord.gg/y2SKXAbpaQ')"
               ></div>
               <div
                 class="content_b3"
-                onclick="window.open('https://x.com/shuiyang_0730?t=GvpbfiU-qKy1cjtxhGLH3g&s=06');"
+                onclick="
+                  window.open(
+                    'https://x.com/shuiyang_0730?t=GvpbfiU-qKy1cjtxhGLH3g&s=06',
+                  )
+                "
               ></div>
             </div>
           </div>
@@ -206,7 +211,11 @@
             11. 以上感謝你的注意(ゝ∀･)
           </span>
           <div class="notice_div">
-            <img src="Img/委託規範圖_202402.png" width="100%" />
+            <img
+              src="Img/commission-guidelines.png"
+              width="100%"
+              alt="繪圖委託規範圖"
+            />
           </div>
         </div>
       </section>
@@ -238,6 +247,7 @@
   document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
   });
+
   $(function () {
     //選單變摺疊
     if ($(window).width() <= 995) {
