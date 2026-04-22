@@ -24,8 +24,8 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="preload" href="./Content/StyleSheet1_20250530.css" as="style" />
-    <link rel="stylesheet" href="./Content/StyleSheet1_20250530.css" />
+    <link rel="preload" href="./Content/StyleSheet1_20260422.css" as="style" />
+    <link rel="stylesheet" href="./Content/StyleSheet1_20260422.css" />
     <link rel="stylesheet" href="./Content/css/bootstrap.css" />
     <script src="./Content/js/bootstrap.js"></script>
     <script src="./Content/js/jquery-3.7.1.min.js"></script>
@@ -140,6 +140,13 @@
               >
             </li>
             <li>
+              <a onclick="Item('li7')" id="li7" class="font font_color"
+                >客製GIF</a
+              >
+            </li>
+          </ul>
+          <ul class="item_ul item_ul2" style="margin-top: 15px">
+            <li>
               <a onclick="Item('li5')" id="li5" class="font font_color"
                 >Q版插圖</a
               >
@@ -147,11 +154,6 @@
             <li>
               <a onclick="Item('li6')" id="li6" class="font font_color"
                 >正比插圖</a
-              >
-            </li>
-            <li>
-              <a onclick="Item('li7')" id="li7" class="font font_color"
-                >客製GIF</a
               >
             </li>
             <li>
@@ -164,7 +166,7 @@
             style="
               border: 2px solid rgb(232, 214, 212);
               margin: 0px auto;
-              margin-top: 25px;
+              margin-top: 20px;
               margin-bottom: 25px;
             "
           ></div>
@@ -254,6 +256,30 @@
               style="display: flex; justify-content: center"
             >
               <div class="row gy-5">
+                <div class="col-md-3 col-12">
+                  <img
+                    src="Img/表符/chibi-emote-funny-boy-illustration-commission.jpg"
+                    style="cursor: pointer; padding-right: 10px; width: 100%"
+                    onclick="OnShow(this)"
+                    alt="Q版搞怪男孩表情符號委託繪圖"
+                  />
+                </div>
+                <div class="col-md-3 col-12">
+                  <img
+                    src="Img/表符/chibi-emote-funny-blonde-girl-illustration-commission.jpg"
+                    style="cursor: pointer; padding-right: 10px; width: 100%"
+                    onclick="OnShow(this)"
+                    alt="Q版逗趣金髮女孩表情符號委託繪圖"
+                  />
+                </div>
+                <div class="col-md-3 col-12">
+                  <img
+                    src="Img/表符/cute-chibi-angry-girl-emote-commission.jpg"
+                    style="cursor: pointer; padding-right: 10px; width: 100%"
+                    onclick="OnShow(this)"
+                    alt="Q版可愛女孩們生氣表情符號委託繪圖"
+                  />
+                </div>
                 <div class="col-md-3 col-12">
                   <img
                     src="Img/表符/chibi-funny-meme-commission1.jpg"
@@ -676,6 +702,20 @@
               style="display: flex; justify-content: center; position: relative"
             >
               <div style="text-align: center">
+                <span class="font content_f"> ◇LAG NTD.??? </span>
+                <img
+                  src="Img/LAG/funny-brain-freeze-gif.gif"
+                  style="width: 80%; cursor: pointer"
+                  onclick="OnShow(this)"
+                  alt="腦袋當機搞怪GIF"
+                />
+              </div>
+            </div>
+            <div
+              class="col-md-4 col-12"
+              style="display: flex; justify-content: center; position: relative"
+            >
+              <div style="text-align: center">
                 <span class="font content_f">
                   ◇蹭蹭(新) NTD.2200 動物元素+300
                 </span>
@@ -880,9 +920,12 @@
               <span class="font content_f"
                 >頭貼/半身 NTD.400<br />
                 全身 NTD.600<br /><br />
-                ◆筆刷可選蠟筆筆觸或平筆風格(未選則隨我)<br />
-                ◇有加物件或人設複雜會視情況加價 單件NTD.100起<br />
-                ◆無人設圖會加收通靈費用NTD.400起
+                ◆
+                報價皆為非商用途，直播、贈送V或印製等需求可至注意事項查看(也可私訊詢問)<br />
+                ◇
+                以上價格為底價，有加物件或人設複雜會視情況加價，單件NTD.100起<br />
+                ◆ 無人設圖會加收通靈費用NTD.400起<br />
+                ◇ 背景價格另計，依需求提供報價<br />
               </span>
             </div>
           </div>
@@ -909,6 +952,14 @@
                 >
                   ◇頭貼/半身◇
                 </span>
+                <div class="col-6">
+                  <img
+                    src="Img/Q版/cute-dog-with-bow-illustration-commission.jpg"
+                    style="width: 100%; cursor: pointer"
+                    onclick="OnShow(this)"
+                    alt="可愛大狗狗配蝴蝶結委託設計"
+                  />
+                </div>
                 <div class="col-6">
                   <img
                     src="Img/Q版/Q版頭貼_揚欸.jpg"
@@ -1036,32 +1087,21 @@
         <div id="proportionalDiv" style="display: none">
           <div class="row justify-content-center gy-3" style="margin-top: 20px">
             <!-- 說明 -->
-            <div class="col-md-2 col-4" style="text-align: center">
-              <span class="font content_f"
-                >◇ 塗鴉 ◇<br />
-                頭貼/半身 NTD.800<br />
-                全身 NTD.1400
+            <div class="col-md-7 col-11" style="text-align: center">
+              <span class="font content_f">
+                ◆報價皆為非商用途，直播、贈送V或印製等需求可至注意事項查看(也可私訊詢問)<br />
+                ◇以上價格為底價，有加物件或人設複雜會視情況加價，單件NTD.100起<br />
+                ◆無人設圖會加收通靈費用NTD.400起
+                ◇背景價格另計，依需求提供報價<br />
+                ◆未來將不定期開放塗鴉驚喜包，會優先在DC頻道公告接單(需要領取身分組)
               </span>
             </div>
             <div class="col-md-1 horizontalLine"></div>
-            <!-- 說明 -->
-            <div
-              class="col-md-4 col-11 offset-1 offset-md-0 proportional1"
-              style="text-align: center"
-            >
-              <span class="font content_f"
-                >◆塗鴉風格不固定且會有雜線、溢色，不一定會打光影<br />
-                ◇筆刷可選蠟筆筆觸或平筆風格(未選則隨我)<br />
-                ◆有加物件或人設複雜會視情況加價 單件NTD.100起<br />
-                ◇無人設圖會加收通靈費用NTD.400起
-              </span>
-            </div>
-            <div class="col-md-1 horizontalLine"></div>
-            <div class="col-md-2 col-4" style="text-align: center">
+            <div class="col-md-4 col-4" style="text-align: center">
               <span class="font content_f">
                 ◇ 精緻 ◇<br />
-                頭貼 NTD.1000<br />
-                半身 NTD.1200<br />
+                頭貼(約至胸上) NTD.1000<br />
+                半身(約至腰上) NTD.1200<br />
                 全身 NTD.2600
               </span>
             </div>
@@ -1129,6 +1169,22 @@
                   style="color: rgb(121, 91, 93); text-align: center"
                   >◇精緻◇</span
                 >
+                <div class="col-6">
+                  <img
+                    src="Img/一般正比/elegant-anime-woman-commission.jpg"
+                    style="width: 100%; cursor: pointer"
+                    onclick="OnShow(this)"
+                    alt="美艷動人精緻正比女生繪圖委託"
+                  />
+                </div>
+                <div class="col-6">
+                  <img
+                    src="Img/一般正比/beautiful-anime-girl-commission.jpg"
+                    style="width: 100%; cursor: pointer"
+                    onclick="OnShow(this)"
+                    alt="美麗女孩精緻正比委託設計"
+                  />
+                </div>
                 <div class="col-6">
                   <img
                     src="Img/一般正比/精緻正比_嘎嘎賀圖.jpg"
@@ -1250,6 +1306,17 @@
           </div>
           <!-- 作品 -->
           <div class="row gy-5" style="margin-top: 10px">
+            <div
+              class="col-md-4 col-12"
+              style="display: flex; justify-content: center"
+            >
+              <img
+                src="Img/客制gif/cute-chibi-animal-frozen-animation.gif"
+                style="width: 80%; cursor: pointer"
+                onclick="OnShow(this)"
+                alt="Q版可愛動物變冰塊動畫"
+              />
+            </div>
             <div
               class="col-md-4 col-12"
               style="display: flex; justify-content: center"
